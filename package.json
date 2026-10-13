@@ -1,12 +1,54 @@
 {
-  "name": "agent-sdk",
-  "module": "index.ts",
+  "name": "vox-agent-sdk",
   "type": "module",
   "private": true,
+  "main": "./dist/sdk.js",
+  "types": "./dist/sdk.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/sdk.js",
+      "types": "./dist/sdk.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node --env-file=.env dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "sdk",
+    "llm",
+    "tools",
+    "voxo",
+    "openai",
+    "typescript",
+    "guardrails",
+    "handoff",
+    "tracing"
+  ],
+  "author": "Sohan ",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "allowScripts": {
+    "esbuild@0.21.5": true
   }
 }
