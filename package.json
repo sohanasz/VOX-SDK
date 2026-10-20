@@ -1,5 +1,5 @@
 {
-  "name": "vox-agent-sdk",
+  "name": "voxo-agent-sdk",
   "type": "module",
   "private": true,
   "main": "./dist/sdk.js",
@@ -40,7 +40,7 @@
     "tracing"
   ],
   "author": "Sohan ",
-  "license": "MIT",
+  "license": "",
   "engines": {
     "node": ">=18.0.0"
   },
