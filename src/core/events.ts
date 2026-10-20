@@ -1,5 +1,5 @@
-import type { IMessage } from "./types.ts";
-import type { ITrace } from "./trace.ts";
+import type { IMessage } from "./types.js";
+import type { ITrace } from "./trace.js";
 
 export interface StepEvent {
   step: string;

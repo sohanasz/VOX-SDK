@@ -1,4 +1,4 @@
-import type { IMessage } from "./types.ts";
+import type { IMessage } from "./types.js";
 
 export interface IHandoffContext {
   fromAgent: string;

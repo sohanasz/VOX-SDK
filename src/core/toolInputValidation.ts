@@ -1,4 +1,4 @@
-import type { IToolInputSchema } from "./types.ts";
+import type { IToolInputSchema } from "./types.js";
 
 export interface ValidationResult {
   valid: boolean;
